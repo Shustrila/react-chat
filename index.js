@@ -14,7 +14,7 @@ import './index.css'
 firebase.initializeApp(firebaseConfig);
 
 const App = () => {
-  getMessages()
+ getMessages()
 
   return (
     <div className="app">
