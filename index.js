@@ -9,7 +9,7 @@ import { firebaseConfig } from './assets/config'
 
 import './index.css'
 
-// firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 const App = () => {
   return (
