@@ -7,11 +7,15 @@ import Chat from './components/Chat'
 
 import { firebaseConfig } from './assets/config'
 
+import { getMessages } from './firebase/messages'
+
 import './index.css'
 
 firebase.initializeApp(firebaseConfig);
 
 const App = () => {
+  getMessages()
+
   return (
     <div className="app">
       <Header />
