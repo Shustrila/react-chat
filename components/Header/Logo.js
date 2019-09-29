@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <div className="header_logo">
       <img className="header_logo-img" src="" />
-      FIREBASE
+      <p>FIREBASE</p>
     </div>
   )
 }
