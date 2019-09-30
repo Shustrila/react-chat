@@ -5,12 +5,15 @@ import Messages from './Messages'
 
 import './index.css'
 
-const Chat = () => {
+const Chat = ({ messages, addMessage }) => {
+
 
   return (
     <div className="chat">
-      <Messages />
-      <Form />
+      <div className="chat_wrapper">
+        <Messages list={messages} />
+      </div>
+      <Form send={addMessage} />
     </div>
   )
 }

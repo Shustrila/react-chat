@@ -1,3 +1,20 @@
 .chat_messages {
-  flex: 1
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chat_message {
+  padding: 0 5px 10px 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #DDD
+}
+
+.chat_message-name {
+  font-size: 20px;
+}
+
+.chat_message-text {
+  color: #333
 }

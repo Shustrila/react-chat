@@ -1,7 +1,7 @@
 import * as firebase from 'firebase'
 
-const messagesRef = firebase.ref('messages')
-
 export const getMessages = () => {
+  const messagesRef = firebase
+
   console.log(messagesRef)
 }
