@@ -1,4 +1,5 @@
 import { types, onSnapshot } from 'mobx-state-tree'
+import { fireDB } from '../utils/firebase'
 
 const MassegeModel = types.model({
   name: types.string,
@@ -11,7 +12,12 @@ const Store = types.model("STORE", {
   addMessage(message) {
     onSnapshot(self, snapshot => console.log(snapshot))
     self.messages.push(message) 
-  } 
+  },
+  getMessage() {
+    fireDB.ref().child("messages").on('value' , (snapshot) => {
+      console.log(snapshot)
+    });
+  }
 }))
 
 

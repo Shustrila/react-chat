@@ -5,8 +5,6 @@ import { observer } from "mobx-react"
 import Header from './components/Header'
 import Chat from './components/Chat'
 
-import { getMessages } from './firebase/messages'
-
 import { fireDB } from './utils/firebase'
 
 import state from './state'
@@ -16,7 +14,7 @@ import './index.css'
 const App = () => {
   const { messages } = state
 
-  console.log(fireDB)
+  state.getMessage()
 
   return (
     <div className="app">
