@@ -7,12 +7,16 @@ import Chat from './components/Chat'
 
 import { getMessages } from './firebase/messages'
 
+import { fireDB } from './utils/firebase'
+
 import state from './state'
 
 import './index.css'
 
 const App = () => {
   const { messages } = state
+
+  console.log(fireDB)
 
   return (
     <div className="app">
